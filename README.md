@@ -25,25 +25,17 @@ namespace Arun
     {
             static void Main(string[] args)
             {
-            int marks;
-            Console.WriteLine("ENTER THE MARK:");
-            marks = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("\nYOUR GRADE IS:");
-            if (marks>90)
-                Console.WriteLine("O GRADE");
-            else if (marks > 80)
-                Console.WriteLine("A+ GRADE");
-            else if (marks > 70)
-                Console.WriteLine("A GRADE");
-            else if (marks > 60)
-                Console.WriteLine("B+ GRADE");
-            else if (marks > 50)
-                Console.WriteLine("B GRADE");
-            else if (marks >= 40)
-                Console.WriteLine("C GRADE");
+                int num1, num2, num3;
+                Console.WriteLine("Enter Three integer");
+                num1 = Convert.ToInt32(Console.ReadLine());
+                num2 = Convert.ToInt32(Console.ReadLine());
+                num3 = Convert.ToInt32(Console.ReadLine());
+            if ((num1 > num2) && (num1 > num3))
+                Console.WriteLine(num1 + " is Greater");
+            else if ((num2 > num1) && (num2 > num3))
+                Console.WriteLine(num2 + " is Greater");
             else
-                Console.WriteLine("FAIL");
-
+                Console.WriteLine(num3 + " is Greater");
         }
     }
 }
@@ -51,7 +43,8 @@ namespace Arun
 
 ## Output:
 
-![Ex2](https://user-images.githubusercontent.com/75235747/163855004-faaef5d8-17da-45bf-a116-642ff098fbf9.PNG)
+![Capture](https://user-images.githubusercontent.com/75235747/163858755-46018b0f-f458-48c1-88cc-1a3f66a563d4.PNG)
+
 
 
 ## Result:
